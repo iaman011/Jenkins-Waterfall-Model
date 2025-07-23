@@ -1,0 +1,31 @@
+Started by upstream project "DevGit01" build number 1
+originally caused by:
+ Started by user iaman011
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\TestGit01
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/iaman011/Jenkins-Waterfall-Model.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\TestGit01 # timeout=10
+Fetching upstream changes from https://github.com/iaman011/Jenkins-Waterfall-Model.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.47.1.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/iaman011/Jenkins-Waterfall-Model.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/iaman011/Jenkins-Waterfall-Model.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 38207137ed58f0d6a28a784cdb2cd9ce4b13d7bc (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 38207137ed58f0d6a28a784cdb2cd9ce4b13d7bc # timeout=10
+Commit message: "Create Production.py"
+First time build. Skipping changelog.
+[TestGit01] $ cmd /c call C:\WINDOWS\TEMP\jenkins12237055845824102431.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\TestGit01>python Test.py 
+Hello! This is a Test Stage
+
+C:\ProgramData\Jenkins\.jenkins\workspace\TestGit01>exit 0 
+Triggering a new build of ProductionGit01
+Finished: SUCCESS
